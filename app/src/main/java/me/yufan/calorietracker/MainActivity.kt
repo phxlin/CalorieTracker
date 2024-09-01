@@ -13,7 +13,7 @@ import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import dagger.hilt.android.AndroidEntryPoint
 import me.yufan.calorietracker.navigation.navigate
-import me.yufan.calorietracker.ui.theme.CaloryTrackerTheme
+import me.yufan.calorietracker.ui.theme.CalorieTrackerTheme
 import me.yufan.core.navigation.Route
 import me.yufan.onboarding_presentation.activity_level.ActivityLevelScreen
 import me.yufan.onboarding_presentation.age.AgeScreen
@@ -29,7 +29,7 @@ class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            CaloryTrackerTheme {
+            CalorieTrackerTheme {
                 val navController = rememberNavController()
                 val scaffoldState = rememberScaffoldState()
                 Scaffold(
